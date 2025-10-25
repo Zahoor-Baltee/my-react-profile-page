@@ -1,7 +1,7 @@
 import { Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
+import constantData from '@/constant/constant.ts'
 export function Hero() {
   const handleDownloadCV = () => {
     // Create a sample CV download - in production, replace with actual CV file
@@ -27,9 +27,9 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-            Hi, I'm{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
-              Your Name
+            Hi, I'm {'  '}
+            <span className=" bg-clip-text ">
+              {constantData.name}
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8">
