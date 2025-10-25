@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-muted-foreground text-center">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Zahoor Abbas. All rights reserved.
           </p>
         </div>
       </div>

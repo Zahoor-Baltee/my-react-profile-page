@@ -16,7 +16,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -29,7 +29,7 @@ export function Contact() {
 
     // In production, send email or save to database
     console.log("Form submitted:", formData);
-    
+
     toast({
       title: "Message sent!",
       description: "Thank you for your message. I'll get back to you soon.",
@@ -64,7 +64,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-medium">your.email@example.com</p>
+                      <p className="font-medium">zahoorabbas360@gmail.com</p>
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="font-medium">+1 (555) 123-4567</p>
+                      <p className="font-medium">+92 3429493874</p>
                     </div>
                   </div>
 
@@ -84,7 +84,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Location</p>
-                      <p className="font-medium">City, Country</p>
+                      <p className="font-medium">Rawalpindi, Pakistan</p>
                     </div>
                   </div>
                 </div>
