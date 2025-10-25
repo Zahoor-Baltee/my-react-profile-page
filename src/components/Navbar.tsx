@@ -36,6 +36,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-2xl font-bold  bg-clip-text ">
             {constantData.name}
+
           </a>
 
           {/* Desktop Navigation */}
