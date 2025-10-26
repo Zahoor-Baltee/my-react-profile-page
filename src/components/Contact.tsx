@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-
+import constantData from '@/constant/constant.ts'
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -64,7 +64,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-medium">zahoorabbas360@gmail.com</p>
+                      <p className="font-medium">{constantData.personalInfo.email}</p>
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="font-medium">+92 3429493874</p>
+                      <p className="font-medium">{constantData.personalInfo.phoneNumber1}</p>
                     </div>
                   </div>
 
@@ -84,7 +84,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Location</p>
-                      <p className="font-medium">Rawalpindi, Pakistan</p>
+                      <p className="font-medium">{constantData.personalInfo.address.city} {constantData.personalInfo.address.state}, {constantData.personalInfo.address.country}</p>
                     </div>
                   </div>
                 </div>
