@@ -29,29 +29,15 @@ export function About() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="p-6 shadow-card hover:shadow-elegant transition-all">
-              <Code2 className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
-              <p className="text-muted-foreground">
-                Writing maintainable, scalable, and efficient code following best practices.
-              </p>
-            </Card>
-
-            <Card className="p-6 shadow-card hover:shadow-elegant transition-all">
-              <Palette className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
-              <p className="text-muted-foreground">
-                Creating beautiful and intuitive user interfaces with attention to detail.
-              </p>
-            </Card>
-
-            <Card className="p-6 shadow-card hover:shadow-elegant transition-all">
-              <Rocket className="h-12 w-12 mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Fast Performance</h3>
-              <p className="text-muted-foreground">
-                Optimizing applications for speed and delivering exceptional user experiences.
-              </p>
-            </Card>
+            {constantData.aboutme.tilesData.map((e, i) => (
+              <Card key={i} className="p-6 shadow-card hover:shadow-elegant transition-all">
+                <Code2 className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-semibold mb-2">{e.title}</h3>
+                <p className="text-muted-foreground">
+                  {e.description}
+                </p>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
