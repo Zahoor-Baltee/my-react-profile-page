@@ -1,41 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import constantData from '@/constant/constant.ts'
 
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-stack e-commerce solution with payment integration, inventory management, and real-time analytics.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "Collaborative project management tool with real-time updates, team chat, and file sharing capabilities.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "AI Content Generator",
-    description:
-      "AI-powered content generation platform using OpenAI API for creating marketing copy and blog posts.",
-    technologies: ["React", "Python", "FastAPI", "OpenAI"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Social Media Dashboard",
-    description:
-      "Analytics dashboard for managing multiple social media accounts with scheduled posting and insights.",
-    technologies: ["Vue.js", "Express", "Redis", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-];
 
 export function Projects() {
   return (
@@ -45,7 +12,7 @@ export function Projects() {
           <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
+            {constantData.projects.map((project, index) => (
               <Card
                 key={index}
                 className="p-6 shadow-card hover:shadow-elegant transition-all flex flex-col"

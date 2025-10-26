@@ -1,30 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
+import constantData from '@/constant/constant.ts'
 
-const education = [
-  {
-    degree: "Master of Computer Science",
-    institution: "University of Technology",
-    period: "2016 - 2018",
-    description: "Specialized in Software Engineering and Web Technologies",
-    achievements: [
-      "GPA: 3.9/4.0",
-      "Dean's List - All semesters",
-      "Thesis: Modern Web Application Architecture",
-    ],
-  },
-  {
-    degree: "Bachelor of Computer Science",
-    institution: "State University",
-    period: "2012 - 2016",
-    description: "Foundation in Computer Science and Programming",
-    achievements: [
-      "GPA: 3.8/4.0",
-      "President, Computer Science Club",
-      "Winner, University Hackathon 2015",
-    ],
-  },
-];
 
 export function Education() {
   return (
@@ -34,7 +11,7 @@ export function Education() {
           <h2 className="text-4xl font-bold text-center mb-12">Education</h2>
 
           <div className="space-y-6">
-            {education.map((edu, index) => (
+            {constantData.education.map((edu, index) => (
               <Card
                 key={index}
                 className="p-6 shadow-card hover:shadow-elegant transition-all"

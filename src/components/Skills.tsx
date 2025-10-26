@@ -1,48 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import constantData from '@/constant/constant.ts'
 
-const skillCategories = [
-  {
-    category: "Frontend",
-    skills: [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "Next.js",
-      "Tailwind CSS",
-      "HTML5",
-      "CSS3",
-      "Redux",
-      "Vue.js",
-    ],
-  },
-  {
-    category: "Backend",
-    skills: [
-      "Node.js",
-      "Express",
-      "Python",
-      "Django",
-      "PostgreSQL",
-      "MongoDB",
-      "REST APIs",
-      "GraphQL",
-    ],
-  },
-  {
-    category: "Tools & Others",
-    skills: [
-      "Git",
-      "Docker",
-      "AWS",
-      "CI/CD",
-      "Jest",
-      "Webpack",
-      "Figma",
-      "Agile",
-    ],
-  },
-];
 
 export function Skills() {
   return (
@@ -52,7 +11,7 @@ export function Skills() {
           <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {skillCategories.map((category, index) => (
+            {constantData.skills.map((category, index) => (
               <Card
                 key={index}
                 className="p-6 shadow-card hover:shadow-elegant transition-all"
