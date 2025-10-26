@@ -57,7 +57,7 @@ export function Skills() {
                 key={index}
                 className="p-6 shadow-card hover:shadow-elegant transition-all"
               >
-                <h3 className="text-2xl font-semibold mb-4 gradient-primary bg-clip-text text-transparent">
+                <h3 className="text-2xl font-semibold mb-4 gradient-primary bg-clip-text text-white">
                   {category.category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
