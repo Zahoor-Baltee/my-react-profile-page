@@ -29,16 +29,14 @@ export function Hero() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             Hi, I'm {'  '}
             <span className=" bg-clip-text ">
-              {constantData.name}
+              {constantData.personalInfo.name}
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8">
-            Full Stack Developer | React Specialist | UI/UX Enthusiast
+            {constantData.experties}
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Passionate about creating beautiful, functional, and user-friendly web
-            applications. With expertise in modern web technologies and a keen eye for
-            design, I bring ideas to life.
+            {constantData.heroDescription}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

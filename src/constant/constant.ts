@@ -19,7 +19,7 @@ const constantData = {
         { icon: 'Twitter', href: "https://twitter.com", label: "Twitter" },
         { icon: 'Mail', href: "mailto:zahoorabbas360@gmail.com", label: "Email" },
     ],
-    experties: ['Full Stack Developer', 'React Specialist', 'UI/UX Enthusiast'],
+    experties: 'Full Stack Developer | React Specialist | UI/UX Enthusiast',
     heroDescription: "Passionate about creating beautiful, functional, and user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I bring ideas to life.",
     aboutme: {
         description1: "I'm a passionate developer with over 5 years of experience in building modern web applications. My journey in tech started with a curiosity about how websites work, and it has evolved into a career I truly love.",
