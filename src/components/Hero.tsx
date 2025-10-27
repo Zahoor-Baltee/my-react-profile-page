@@ -4,11 +4,13 @@ import heroBg from "@/assets/hero-bg.jpg";
 import constantData from '@/constant/constant.ts'
 export function Hero() {
   const handleDownloadCV = () => {
-    // Create a sample CV download - in production, replace with actual CV file
     const link = document.createElement("a");
-    link.href = "/cv.pdf"; // Add your actual CV file to public folder
-    link.download = "CV.pdf";
+    link.href = "/cv.pdf";
+    link.setAttribute("download", "Zahoor-Abbas-Resume.pdf");
+    link.setAttribute("type", "application/pdf");
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
