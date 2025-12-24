@@ -77,7 +77,6 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <Button onClick={handleDownloadCV} size="sm" className="rounded-full px-5 hidden lg:flex font-medium bg-slate-900 text-white dark:bg-white dark:text-slate-900">
