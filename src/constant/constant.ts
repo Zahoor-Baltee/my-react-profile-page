@@ -1,3 +1,10 @@
+import kamkaj from "../assets/kamkaj.jpg"
+import crmhub from "../assets/crmhub.jpg"
+import eterna from "../assets/eterna.png"
+import fixsavy from "../assets/fixsavy.png"
+import xphyre from "../assets/xyphre.png"
+import acton from "../assets/acton.png"
+
 const constantData = {
     name: "Zahoor Abbas",
     personalInfo: {
@@ -22,8 +29,8 @@ const constantData = {
     experties: 'Full Stack Developer | React Specialist | UI/UX Enthusiast',
     heroDescription: "Passionate about creating beautiful, functional, and user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I bring ideas to life.",
     aboutme: {
-        description1: "I'm a passionate developer with over 5 years of experience in building modern web applications. My journey in tech started with a curiosity about how websites work, and it has evolved into a career I truly love.",
-        description2: "I specialize in React, TypeScript, and modern web technologies. I believe in writing clean, maintainable code and creating intuitive user experiences that make a difference.",
+        description1: "I'm a passionate developer with over 3 years of experience in building modern web applications. My journey in tech started with a curiosity about how websites work, and it has evolved into a career I truly love.",
+        description2: "I specialize in React,JavaScript, TypeScript, and modern web technologies. I believe in writing clean, maintainable code and creating intuitive user experiences that make a difference.",
         description3: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blog posts and mentoring.",
         description4: "I'm always excited to work on challenging projects and collaborate with talented teams to build something amazing.",
         tilesData: [
@@ -34,21 +41,21 @@ const constantData = {
     },
     experiences: [
         {
-            title: "Senior Full Stack Developer",
-            company: "Tech Company Inc.",
-            period: "2022 - Present",
+            title: "Frontend Developer",
+            company: "Xphyre Inc.",
+            period: " Present",
             description:
-                "Leading development of enterprise-level web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
+                "Leading development of enterprise-level web applications using React and Next js. Mentoring junior developers and implementing best practices.",
             highlights: [
                 "Architected and deployed microservices infrastructure",
                 "Improved application performance by 40%",
-                "Led team of 5 developers",
+                "Led frontend developers",
             ],
         },
         {
             title: "Full Stack Developer",
-            company: "Digital Solutions Ltd.",
-            period: "2020 - 2022",
+            company: "Remote",
+            // period: "2025 - 2025",
             description:
                 "Developed responsive web applications and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality products.",
             highlights: [
@@ -59,8 +66,8 @@ const constantData = {
         },
         {
             title: "Frontend Developer",
-            company: "StartUp Ventures",
-            period: "2018 - 2020",
+            company: "XtecSoft Pvt Ltd",
+            // period: "2023 - 2025",
             description:
                 "Created engaging user interfaces and improved website performance. Worked closely with designers to implement pixel-perfect designs.",
             highlights: [
@@ -82,7 +89,8 @@ const constantData = {
                 "HTML5",
                 "CSS3",
                 "Redux",
-                "Vue.js",
+                "Material UI",
+                "PWA",
             ],
         },
         {
@@ -90,85 +98,141 @@ const constantData = {
             skills: [
                 "Node.js",
                 "Express",
-                "Python",
-                "Django",
-                "PostgreSQL",
+                "Firebase",
+                "Supabase",
                 "MongoDB",
                 "REST APIs",
-                "GraphQL",
+                "Odata",
             ],
         },
         {
             category: "Tools & Others",
             skills: [
                 "Git",
-                "Docker",
-                "AWS",
+                // "Docker",
+                // "AWS",
                 "CI/CD",
-                "Jest",
-                "Webpack",
+                // "Jest",
+                // "Webpack",
                 "Figma",
                 "Agile",
+                "Jira",
+                "Trello",
+                "Postman",
             ],
         },
     ],
     education: [
         {
-            degree: "Master of Computer Science",
-            institution: "University of Technology",
-            period: "2016 - 2018",
-            description: "Specialized in Software Engineering and Web Technologies",
+            degree: "Master in Computer Science (MCS)",
+            institution: "University of Karachi",
+            period: "2020 - 2023",
+            description: "Focused on Software Engineering, Web Development, and Database Systems.",
             achievements: [
-                "GPA: 3.9/4.0",
-                "Dean's List - All semesters",
-                "Thesis: Modern Web Application Architecture",
+                "Developed multiple academic projects using MERN Stack",
+                "Represented university in inter-department hackathons",
+                "Member of Programming & Web Development Society"
             ],
         },
         {
-            degree: "Bachelor of Computer Science",
-            institution: "State University",
-            period: "2012 - 2016",
-            description: "Foundation in Computer Science and Programming",
+            degree: "Associate Degree in computer Science (ADP'cs)",
+            institution: "Government College University Faisalabad",
+            period: "2018 - 2020",
+            description: "Studied Computer Science fundamentals and programming basics.",
             achievements: [
-                "GPA: 3.8/4.0",
-                "President, Computer Science Club",
-                "Winner, University Hackathon 2015",
+                "Participated in coding competitions",
+                "Top performer in Computer Science subjects"
             ],
         },
     ],
     projects: [
         {
-            title: "E-Commerce Platform",
+            title: "EternaTrust Group",
             description:
-                "A full-stack e-commerce solution with payment integration, inventory management, and real-time analytics.",
-            technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-            liveUrl: "#",
-            githubUrl: "#",
+                "Eterna Trust Group connects individuals and families with trusted insurance solutions by offering quotes and applications from multiple leading carriers.",
+            technologies: [
+                "Next.js",
+                "Redux",
+                "Tailwind",
+                "JavaScript",
+                "Responsive UI Design"
+            ],
+            liveUrl: "https://eternatrustgroup.com/",
+            githubUrl: null,
+            image: eterna,
         },
         {
-            title: "Task Management App",
+            title: "Fixsavvy",
             description:
-                "Collaborative project management tool with real-time updates, team chat, and file sharing capabilities.",
-            technologies: ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
-            liveUrl: "#",
-            githubUrl: "#",
+                "A service-based marketplace platform built using Next that connects customers with professional service providers for home maintenance, repair, cleaning, and other on-demand services across UK.",
+            technologies: [
+                "Next.js",
+                "Redux",
+                "Tailwind",
+                "Charts",
+                "Responsive UI Design"
+            ],
+            liveUrl: "https://www.fixsavvy.com/",
+            githubUrl: null,
+            image: fixsavy,
         },
         {
-            title: "AI Content Generator",
+            title: "Xphyre",
             description:
-                "AI-powered content generation platform using OpenAI API for creating marketing copy and blog posts.",
-            technologies: ["React", "Python", "FastAPI", "OpenAI"],
-            liveUrl: "#",
-            githubUrl: "#",
+                "Xphyre, Inc. is a diversified innovation company operating across insurance, telecom, gaming, health, and customer-engagement ecosystems. We build, scale, and support businesses that redefine how people connect, communicate, and experience technology.",
+            technologies: [
+                "Next.js",
+                "Tailwind",
+                "JavaScript",
+                "Responsive UI Design"
+            ],
+            liveUrl: "https://xphyre.com/",
+            githubUrl: null,
+            image: xphyre,
         },
         {
-            title: "Social Media Dashboard",
+            title: "Acton Senior Center (PWA)",
             description:
-                "Analytics dashboard for managing multiple social media accounts with scheduled posting and insights.",
-            technologies: ["Vue.js", "Express", "Redis", "Chart.js"],
-            liveUrl: "#",
-            githubUrl: "#",
+                "A  React-based PWA for a senior care center, I developed role-based features for drivers, cooks, and volunteers. The app managed time-dependent tasks like rides, meals, and daily activities, presenting them in a clear, easy-to-use interface designed for real-world use.",
+            technologies: [
+                "React.js",
+                "Redux",
+                "Material UI",
+                "Responsive UI Design"
+            ],
+            liveUrl: "https://app.myseniorcenter.net/",
+            githubUrl: null,
+            image: acton,
         },
+        {
+            title: "Home Services Marketplace Platform",
+            description:
+                "A service-based marketplace platform built using an MVC architecture that connects customers with professional service providers for home maintenance, repair, cleaning, and other on-demand services across Pakistan.",
+            technologies: [
+                "HTML",
+                "CSS",
+                "Bootstrap5",
+                "JavaScript",
+                "Responsive UI Design"
+            ],
+            liveUrl: "https://www.kamkaj.pk",
+            githubUrl: null,
+            image: kamkaj,
+        },
+        {
+            title: "CRM Hub Platform",
+            description:
+                "A centralized CRM platform designed to manage customers, leads, and business data through dashboards, analytics, and intuitive user interfaces.",
+            technologies: [
+                "React.js",
+                "Redux",
+                "Material UI",
+                "Charts",
+            ],
+            liveUrl: "https://crm-hub.azurewebsites.net/",
+            githubUrl: null,
+            image: crmhub,
+        }
     ],
 }
 export default constantData
