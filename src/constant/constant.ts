@@ -1,42 +1,39 @@
-import kamkaj from "../assets/kamkaj.jpg"
-import crmhub from "../assets/crmhub.jpg"
-import eterna from "../assets/eterna.png"
-import fixsavy from "../assets/fixsavy.png"
-import xphyre from "../assets/xyphre.png"
-import acton from "../assets/acton.png"
+
+import kamkaj from "../assets/kamkaj.jpg";
+import crmhub from "../assets/crmhub.jpg";
+import eterna from "../assets/eterna.png";
+import fixsavy from "../assets/fixsavy.png";
+import xphyre from "../assets/xyphre.png";
+import acton from "../assets/acton.png";
+import { Github, Mail, Linkedin } from "lucide-react";
+
+/**
+
+Senior Full-Stack Developer Portfolio Configuration
+
+Designed for: Zahoor Abbas
+*/
 
 const constantData = {
     name: "Zahoor Abbas",
+    role: "Senior Full Stack Engineer",
+    experties: 'Full Stack Developer | React Specialist | UI/UX Enthusiast',
+    heroDescription: "Passionate about creating beautiful, functional, and user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I bring ideas to life.",
     personalInfo: {
         name: "Zahoor Abbas",
         email: "zahoorabbas360@gmail.com",
-        secondEmail: "lthansava@gmail.com",
-        phoneNumber1: "03429493874",
-        phoneNumber2: "03555172195",
-        address: {
-            city: "Rawalpindi",
-            state: "Punjab",
-            country: "Pakistan"
-        },
-        Image: ""
+        location: "Islamabad, Pakistan",
+        phone: "+92 300 1234567"
     },
-    socialLinks: [
-        { icon: 'Github', href: "https://github.com", label: "GitHub" },
-        { icon: 'Linkedin', href: "https://linkedin.com", label: "LinkedIn" },
-        { icon: 'Twitter', href: "https://twitter.com", label: "Twitter" },
-        { icon: 'Mail', href: "mailto:zahoorabbas360@gmail.com", label: "Email" },
-    ],
-    experties: 'Full Stack Developer | React Specialist | UI/UX Enthusiast',
-    heroDescription: "Passionate about creating beautiful, functional, and user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I bring ideas to life.",
     aboutme: {
-        description1: "I'm a passionate developer with over 3 years of experience in building modern web applications. My journey in tech started with a curiosity about how websites work, and it has evolved into a career I truly love.",
-        description2: "I specialize in React,JavaScript, TypeScript, and modern web technologies. I believe in writing clean, maintainable code and creating intuitive user experiences that make a difference.",
-        description3: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical blog posts and mentoring.",
-        description4: "I'm always excited to work on challenging projects and collaborate with talented teams to build something amazing.",
+        description1: "With over several years of experience in the tech industry, I specialize in building robust and scalable web applications. My journey started with a curiosity for how things work on the internet, which evolved into a professional career in full-stack development.",
+        description2: "I pride myself on writing clean, maintainable code and staying updated with the latest industry trends. Whether it's architecting a complex backend or crafting a pixel-perfect frontend, I approach every challenge with precision.",
+        description3: "Collaboration is at the heart of my work process. I believe the best products are built when engineering meets design and user needs seamlessly.",
+        description4: "When I'm not coding, you'll find me exploring new UI patterns, contributing to open-source projects, or mentoring junior developers in the community.",
         tilesData: [
-            { icon: "", title: "Clean Code", description: "Writing maintainable, scalable, and efficient code following best practices." },
-            { icon: "", title: "UI/UX Design", description: "Creating beautiful and intuitive user interfaces with attention to detail." },
-            { icon: "", title: "Fast Performance", description: "Optimizing applications for speed and delivering exceptional user experiences." }
+            { title: "Clean Code", description: "Prioritizing readability and long-term maintainability in every repository.", icon: "Code2" },
+            { title: "Modern UI/UX", description: "Crafting intuitive interfaces that provide exceptional user experiences.", icon: "Palette" },
+            { title: "Performance", description: "Optimizing every kilobyte to ensure lightning-fast load times and smooth interactions.", icon: "Rocket" }
         ]
     },
     experiences: [
@@ -54,8 +51,8 @@ const constantData = {
         },
         {
             title: "Full Stack Developer",
-            company: "Remote",
-            // period: "2025 - 2025",
+            company: "Remote (Project base)",
+            period: "2025 - 2025",
             description:
                 "Developed responsive web applications and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality products.",
             highlights: [
@@ -67,7 +64,7 @@ const constantData = {
         {
             title: "Frontend Developer",
             company: "XtecSoft Pvt Ltd",
-            // period: "2023 - 2025",
+            period: "2023 - 2025",
             description:
                 "Created engaging user interfaces and improved website performance. Worked closely with designers to implement pixel-perfect designs.",
             highlights: [
@@ -77,50 +74,23 @@ const constantData = {
             ],
         },
     ],
+
     skills: [
         {
-            category: "Frontend",
-            skills: [
-                "React",
-                "TypeScript",
-                "JavaScript",
-                "Next.js",
-                "Tailwind CSS",
-                "HTML5",
-                "CSS3",
-                "Redux",
-                "Material UI",
-                "PWA",
-            ],
+            category: "Frontend Development",
+            icon: "Code2",
+            skills: ["React", "TypeScript", "JavaScript", "Next.js", "Tailwind CSS", "HTML5", "CSS3", "Redux", "Material UI", "PWA",]
         },
         {
-            category: "Backend",
-            skills: [
-                "Node.js",
-                "Express",
-                "Firebase",
-                "Supabase",
-                "MongoDB",
-                "REST APIs",
-                "Odata",
-            ],
+            category: "Backend & Database",
+            icon: "Database",
+            skills: ["Node.js", "Express", "Firebase", "Supabase", "MongoDB", "REST APIs",]
         },
         {
-            category: "Tools & Others",
-            skills: [
-                "Git",
-                // "Docker",
-                // "AWS",
-                "CI/CD",
-                // "Jest",
-                // "Webpack",
-                "Figma",
-                "Agile",
-                "Jira",
-                "Trello",
-                "Postman",
-            ],
-        },
+            category: "Tools & DevOps",
+            icon: "Settings",
+            skills: ["Git", "CI/CD", "Figma", "Agile", "Jira", "Trello", "Postman",]
+        }
     ],
     education: [
         {
@@ -135,7 +105,7 @@ const constantData = {
             ],
         },
         {
-            degree: "Associate Degree in computer Science (ADP'cs)",
+            degree: "Associate Degree in computer Science (ADP-CS)",
             institution: "Government College University Faisalabad",
             period: "2018 - 2020",
             description: "Studied Computer Science fundamentals and programming basics.",
@@ -144,6 +114,22 @@ const constantData = {
                 "Top performer in Computer Science subjects"
             ],
         },
+    ],
+    certifications: [
+        {
+            title: "MERN Stack Development",
+            organization: "Jawan Pakistan",
+            year: "2022",
+            duration: "1.5 Years",
+            description: "Comprehensive training in MongoDB, Express.js, React, and Node.js, focusing on building scalable full-stack applications and RESTful APIs."
+        },
+        {
+            title: "React Native Mobile Development",
+            organization: "Jawan Pakistan",
+            year: "2022",
+            duration: "1.5 Years",
+            description: "In-depth course on building cross-platform mobile applications for iOS and Android using React Native and mobile UI design principles."
+        }
     ],
     projects: [
         {
@@ -234,5 +220,10 @@ const constantData = {
             image: crmhub,
         }
     ],
-}
-export default constantData
+    socialLinks: [
+        { icon: Github, href: "https://github.com/Zahoor-Baltee", label: "GitHub" },
+        { icon: Linkedin, href: "https://www.linkedin.com/in/zahoor-abbas-030837249/", label: "LinkedIn" },
+        { icon: Mail, href: "mailto:zahoorabbas360@gmail.com", label: "Email" }
+    ]
+};
+export default constantData;

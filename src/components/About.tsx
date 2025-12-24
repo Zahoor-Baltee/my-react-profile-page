@@ -1,44 +1,56 @@
-import { Card } from "@/components/ui/card";
+
+import constantData from "@/constant/constant";
 import { Code2, Palette, Rocket } from "lucide-react";
-import constantData from '@/constant/constant.ts'
+
 export function About() {
+  const IconMap = {
+    Code2: Code2,
+    Palette: Palette,
+    Rocket: Rocket
+  };
+
   return (
-    <section id="about" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+    <section id="about" className="py-24 bg-slate-50/50 dark:bg-slate-900/20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="flex flex-col items-center mb-16 space-y-4">
+          <h2 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white">About Me</h2>
+          <div className="h-1.5 w-12 bg-blue-600 rounded-full" />
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="space-y-4">
-              <p className="text-lg text-muted-foreground">
-                {constantData.aboutme.description1}
-              </p>
-              <p className="text-lg text-muted-foreground">
-                {constantData.aboutme.description2}
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <p className="text-lg text-muted-foreground">
-                {constantData.aboutme.description3}
-              </p>
-              <p className="text-lg text-muted-foreground">
-                {constantData.aboutme.description4}
-              </p>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 mb-16">
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400 italic font-medium">
+              "{constantData.aboutme.description1}"
+            </p>
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+              {constantData.aboutme.description2}
+            </p>
           </div>
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+              {constantData.aboutme.description3}
+            </p>
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+              {constantData.aboutme.description4}
+            </p>
+          </div>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {constantData.aboutme.tilesData.map((e, i) => (
-              <Card key={i} className="p-6 shadow-card hover:shadow-elegant transition-all">
-                <Code2 className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-semibold mb-2">{e.title}</h3>
-                <p className="text-muted-foreground">
-                  {e.description}
+        <div className="grid md:grid-cols-3 gap-8">
+          {constantData.aboutme.tilesData.map((tile, i) => {
+            const IconComponent = IconMap[tile.icon] || Code2;
+            return (
+              <div key={i} className="group p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="h-14 w-14 rounded-2xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <IconComponent className="h-7 w-7 text-blue-600 dark:text-blue-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">{tile.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {tile.description}
                 </p>
-              </Card>
-            ))}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
