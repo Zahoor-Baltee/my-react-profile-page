@@ -28,9 +28,11 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                   <div className="flex gap-3">
-                    <Button variant="primary" size="sm" className="rounded-full gap-2">
-                      <ExternalLink className="h-4 w-4" /> Live Demo
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <Button variant="primary" size="sm" className="rounded-full gap-2">
+                        <ExternalLink className="h-4 w-4" /> Live Demo
+                      </Button>
+                    </a>
                     {project.githubUrl && (
                       <Button variant="outline" size="sm" className="rounded-full gap-2 bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20">
                         <Github className="h-4 w-4" /> Source
