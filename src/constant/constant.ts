@@ -215,7 +215,8 @@ const constantData = {
                 "Material UI",
                 "Charts",
             ],
-            liveUrl: "https://crm-hub.azurewebsites.net/",
+            liveUrl: null,
+            // liveUrl: "https://crm-hub.azurewebsites.net/",
             githubUrl: null,
             image: crmhub,
         }
