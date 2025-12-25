@@ -23,7 +23,7 @@ const constantData = {
         name: "Zahoor Abbas",
         email: "zahoorabbas360@gmail.com",
         location: "Islamabad, Pakistan",
-        phone: "+92 300 1234567"
+        phone: "+92 342 9493874"
     },
     aboutme: {
         description1: "With over several years of experience in the tech industry, I specialize in building robust and scalable web applications. My journey started with a curiosity for how things work on the internet, which evolved into a professional career in full-stack development.",
@@ -56,7 +56,7 @@ const constantData = {
             description:
                 "Developed responsive web applications and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality products.",
             highlights: [
-                "Built 10+ production-ready applications",
+                "Built multiple production-ready applications",
                 "Implemented CI/CD pipelines",
                 "Reduced bugs by 30% through comprehensive testing",
             ],
